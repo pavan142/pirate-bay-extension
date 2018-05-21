@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Pirate Bay Extension",
+  "description": "Facilitates Easy Download of Torrents from proxy pirate bay sites",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+        "matches": [
+        "https://proxyfl.info/*",
+        "https://proxytpb.pw/*",
+        "https://proxytpb.org/*"
+        ],
+        "js": ["content.js"]
+    }   
+  ],
+  "browser_action": {
+  "default_icon": "/icons/png/skull.png"
+  }
+}
